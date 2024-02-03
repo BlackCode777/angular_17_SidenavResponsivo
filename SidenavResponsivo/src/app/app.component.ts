@@ -7,6 +7,13 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
+// material
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,6 +25,16 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     ProductsComponent,
     StatisticsComponent,
     SidenavComponent,
+
+    //Import Libs Material Angular
+    MatSidenavModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatListModule,
+
+    //BrowserAnimationsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
