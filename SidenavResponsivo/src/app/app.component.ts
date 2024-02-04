@@ -1,6 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {
+  RouterLink,
+  RouterLinkActive,
+  RouterModule,
+  RouterOutlet,
+} from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductsComponent } from './components/products/products.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
@@ -19,8 +24,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-root',
   standalone: true,
   imports: [
+    // Import CommonModule
     CommonModule,
+
+    // Import Router
     RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    RouterModule,
+
+    // Import Components
     HeaderComponent,
     DashboardComponent,
     ProductsComponent,
@@ -46,7 +59,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 export class AppComponent {
   title = 'SidenavResponsivo';
 
+  sideBarOpen = true;
+
   ngOnInit() {
     console.log('AppComponent');
+  }
+
+  sideBarToggle() {
+    console.log('AppComponent');
+    this.sideBarOpen = !this.sideBarOpen;
   }
 }
