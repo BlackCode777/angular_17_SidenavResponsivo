@@ -45,4 +45,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
   title = 'SidenavResponsivo';
+
+  ngOnInit() {
+    console.log('AppComponent');
+  }
 }
