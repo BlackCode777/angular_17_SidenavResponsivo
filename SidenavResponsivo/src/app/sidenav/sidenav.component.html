@@ -4,31 +4,33 @@
       src="../../assets/profile-bg-3.png"
       alt="CompanyLogo"
       class="Logo py-4"
-      width="90"
+      width="70"
       height="90"
     />
   </div>
 
   <mat-divider></mat-divider>
 
-  <h2 matSubheader class="mt-2">APPLICATION</h2>
-
-  <a mat-list-item routerLink="/home" routerLinkActive="list-item-active">
-    <mat-icon>home</mat-icon>
-    Home
-  </a>
-
-  <a mat-list-item routerLink="/dashboard" routerLinkActive="list-item-active">
-    <mat-icon>dashboard</mat-icon>
-    Dashboard
-  </a>
+  <h2 class="mat-subheader mt-2">APPLICATION</h2>
 
   <a
-    mat-list-item
-    routerLink="/estatistics"
+    class="mat-list-item"
+    routerLink="/home"
+    routerLinkActive="list-item-active"
+    ><mat-icon>home</mat-icon> Home
+  </a>
+  <a
+    class="mat-list-item"
+    routerLink="/dashboard"
     routerLinkActive="list-item-active"
   >
     <mat-icon>dashboard</mat-icon>
-    Statistics
+    Dashboard
+  </a>
+  <a
+    class="mat-list-item"
+    routerLink="/estatistics"
+    routerLinkActive="list-item-active"
+    ><mat-icon>dashboard</mat-icon> Statistics
   </a>
 </mat-nav-list>

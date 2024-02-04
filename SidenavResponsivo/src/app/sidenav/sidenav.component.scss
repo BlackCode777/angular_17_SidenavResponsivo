@@ -1,53 +1,69 @@
-.logo {
-  text-align: center;
-  padding: 2.6rem 1 rem;
-  img {
-    width: 100px;
+mat-nav-list {
+  a {
+    margin-left: 3rem;
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-start;
   }
-}
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(42, 48, 48);
+  .logo {
+    text-align: center;
+    padding: 2.6rem 1 rem;
+    img {
+      width: 100px;
+    }
+  }
+  mat-divider {
+    border-top-width: 2px;
+    border-color: aliceblue;
+  }
+  .mat-subheader {
+    display: flex;
+    justify-content: center;
+    color: rgb(143, 31, 235) !important;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
 
-mat-icon {
-  vertical-align: center;
-  margin-right: 1rem;
-}
-
-mat-divider {
-  border-top-width: 2px;
-  border-color: aliceblue;
-}
-
-mat-list-item {
-  color: rgb(132, 136, 139) !important;
-  font-size: 1.2rem;
-  height: 44px !important;
-  margin-bottom: 4px;
-
-  ::ng-deep {
-    .mat-list-item-content {
-      border-radius: 5px;
-      margin: 0 8px;
-      &:hover {
-        background-color: #28282b !important;
+  .list-item-active {
+    color: aliceblue !important;
+    text-decoration: none;
+    ::ng-deep {
+      .mat-list-item-content {
+        background-color: #7373a3 !important;
+        &:hover {
+          background-color: #3030e9 !important;
+          text-decoration: none;
+        }
       }
     }
   }
-}
 
-.list-item-active {
-  color: aliceblue !important;
-  ::ng-deep {
-    .mat-list-item-content {
-      background-color: #28282b !important;
-      &:hover {
-        background-color: #28282b !important;
+  mat-list-item {
+    color: rgb(203, 210, 218) !important;
+    font-size: 1.2rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+    text-decoration: none;
+    ::ng-deep {
+      .mat-list-item-content {
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0 8px;
+        &:hover {
+          text-decoration: none;
+          background: #00000c !important;
+        }
       }
     }
+    mat-icon {
+      vertical-align: center;
+      margin-right: 1rem;
+    }
   }
-}
-
-.mat-subheader {
-  color: rgb(143, 31, 235) !important;
-  font-size: 0.6rem;
-  font-weight: 100;
-  letter-spacing: 1px;
 }
