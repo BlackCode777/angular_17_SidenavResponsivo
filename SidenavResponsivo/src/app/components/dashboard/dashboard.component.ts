@@ -5,6 +5,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
+import { ChatBarraComponent } from '../../GRAFICOS-shared/chat-barra/chat-barra.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -20,6 +21,9 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
     MatMenuModule,
     MatToolbarModule,
     MatListModule,
+
+    // Import Components
+    ChatBarraComponent,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
