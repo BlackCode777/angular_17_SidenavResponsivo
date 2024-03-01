@@ -5,7 +5,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
-import { ChatBarraComponent } from '../../GRAFICOS-shared/chat-barra/chat-barra.component';
+import { TestesJavaScriptTypeScriptComponent } from '../../testes-java-script-type-script/testes-javascripttypescript.component';
+//import { ChatBarraComponent } from '../../GRAFICOS-shared/chat-barra/chat-barra.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -22,10 +23,16 @@ import { ChatBarraComponent } from '../../GRAFICOS-shared/chat-barra/chat-barra.
     MatToolbarModule,
     MatListModule,
 
+    TestesJavaScriptTypeScriptComponent,
+
     // Import Components
-    ChatBarraComponent,
+    //ChatBarraComponent,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
-export class DashboardComponent {}
+export class DashboardComponent {
+  constructor() {}
+
+  ngOnInit() {}
+}
